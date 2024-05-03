@@ -1,0 +1,16 @@
+version: '3.0'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"  # RabbitMQ
+      - "15672:15672"  # RabbitMQ Management UI
+      - "15692:15692"  # Prometheus Exporter
+
+  prometheus:
+    image: prom/prometheus:v2.20.1
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"  # Prometheus
