@@ -10,7 +10,7 @@ To get started with monitoring RabbitMQ, follow these steps:
 
 Clone this repository to your local machine using the following command:
 
-git clone https://github.com/mashhoud419/Grafana-prometheus-rabbitmq-monitoring.git
+git clone https://github.com/mashhoudrajput/Grafana-prometheus-rabbitmq-monitoring
 Run Docker Compose
 Navigate to the cloned repository directory and run Docker Compose to start the monitoring environment:
 
